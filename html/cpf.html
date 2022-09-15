@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validar CPF</title>
+    <link rel="stylesheet" href="/css/cpf.css" />
+  </head>
+
+  <body class="tema">
+    <header id="topo">
+      <div class="titulo">
+        <h1>Validar CPF</h1>
+      </div>
+    </header>
+    <main>
+      <section class="sessao" id="documents">
+        <div>
+          <label for="documento" id="cpf-entrada">Digite seu CPF:</label
+          ><br /><br />
+          <input type="number" name="documento" id="cpf" required /><br /><br />
+          <div id="alert"></div>
+          <br /><br />
+
+          <button id="verificador" type="submit" onclick="validar()">
+            Verificar
+          </button>
+          <button id="limpar" type="reset" onclick="limpar()">Limpar</button>
+        </div>
+      </section>
+      <section class="sessao" id="text-alternativo">
+        <div id="texto">
+          <p id="text">
+            Um CPF só é valido se estiver cadastrado na base da Receita Federal.
+            O CPF é composto de 11 algarismos, sendo os dois últimos dígitos
+            verificadores. Através dos dígitos verificadores podemos saber se
+            ele tem o formato correto sem precisar consultar a Receita Federal.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="/script/cpf.js"></script>
+  </body>
+</html>
